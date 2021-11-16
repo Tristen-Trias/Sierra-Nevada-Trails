@@ -40,7 +40,7 @@ CREATE TABLE UserInventory(
 
 CREATE TABLE Mode (
     m_modekey           int             not null,
-    m_modename          varchar(30)     not null,
+    m_name          varchar(30)     not null,
     m_information       varchar(100)    not null
 );
 

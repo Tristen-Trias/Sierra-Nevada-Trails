@@ -4,7 +4,7 @@ INSERT INTO Location (l_name, l_locationkey, l_information)
     VALUES
     ("Calaveras County", 1, "Information"),
     ("Tuolumne County", 2, "Information"),
-    ("Yosemite National park", 3, "Information"),
+    ("Yosemite National Park", 3, "Information"),
     ("Devils Postpile National Monument", 4, "Information"),
     ("Inyo National Forest", 5, "Information"),
     ("Sierra National Forest", 6, "Information"),
@@ -31,7 +31,7 @@ INSERT INTO Trail (t_key, t_name, t_diffkey, t_locationkey, t_location, t_length
     (5, "May Lake", 2, 3, "Yosemite National Park", 5, 1, "Information"),
     (6, "Mirror Lake", 1, 3, "Yosemite National Park", 2.4, 1, "Information"),
     (7, "Happy Isles", 1, 3, "Yosemite National Park", 0.75, 1, "Information"),
-    (8, "Half Dome", 4, 3, "Yosemite National Park", 16, 1, "Information"),
+    (8, "Half Dome", 4, 3, "Yosemite National Park", 16, 3, "Information"),
     (9, "The Mist Trail", 2, 3, "Yosemite National Park", 3, 1, "Information"),
     (10, "Panorama Trail", 3, 3, "Yosemite National Park", 9.4, 1, "Information"),
     (11, "Glacier Point", 1, 3, "Yosemite National Park", 0.5, 1, "Information"),
@@ -103,7 +103,7 @@ INSERT INTO Trail (t_key, t_name, t_diffkey, t_locationkey, t_location, t_length
     (77, "Trail of 100 Giants", 1, 9, "Sequoia National Forest", 1.3, 1, "Information")
 ;
 
-INSERT INTO Mode (m_modekey, m_modename, m_information)
+INSERT INTO Mode (m_modekey, m_name, m_information)
     VALUES
     (1, "Hiking", "Information"),
     (2, "Biking", "Information"),
