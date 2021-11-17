@@ -114,3 +114,12 @@ SELECT t_name, t_location, d_name
     );
 
 SELECT "----------";
+
+SELECT u_name, e_name
+    FROM Equipment, UserInventory, User
+
+    WHERE(
+        e_eqkey = ui_eqkey AND
+        ui_inventorykey = u_inventorykey AND
+        u_name = "Bob Mann"
+    );

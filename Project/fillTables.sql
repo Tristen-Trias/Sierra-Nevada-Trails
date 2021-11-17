@@ -110,3 +110,29 @@ INSERT INTO Mode (m_modekey, m_name, m_information)
     (3, "Backpacking", "Information")
 ;
 
+INSERT INTO User(u_name, u_inventorykey, u_diffkey, u_prefmode)
+    VALUES
+    ("Jeff Hanks", 1, 2, "Hiking"),
+    ("Bill Smith", 2, 1, "Hiking"),
+    ("Bob Mann", 3, 5, "Backpacking")
+;
+
+INSERT INTO Equipment(e_name, e_eqkey, e_modekey, e_diffkey, e_information)
+    VALUES
+    ("Backpack", 1, 3, 4, "Information"),
+    ("Beginner Boots", 2, 1, 1, "Information"),
+    ("Large Backpack", 3, 3, 5, "Information"),
+    ("Trail Bike", 4, 2, 2, "Information"),
+    ("Hiking Stick", 5, 1, 1, "Information")
+    ("Tent", 6, 3, 4, "Information")
+;
+
+INSERT INTO UserInventory(ui_inventorykey, ui_eqkey, ui_qty, ui_information)
+    VALUES
+    (1, 2, 1, "Information"),
+    (1, 5, 1, "Information"),
+    (2, 2, 2, "Information"),
+    (2, 5, 3, "Information"),
+    (3, 6, 2, "Information"),
+    (3, 3, 1, "Information")
+;
